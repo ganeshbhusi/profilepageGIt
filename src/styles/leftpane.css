@@ -1,0 +1,283 @@
+.maindiv{
+    width: 100%;
+    margin: 0;
+}
+.leftNav{
+    margin-left: 4%;
+    padding-left: 10px;
+    width: 20%;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.profile_image{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.profile_image1{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.buttonfollow1{
+    color: #24292e;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    opacity: 1;
+    transition: .2s;
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+}
+.main_name{
+    color: #24292e;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+}
+.main_id{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666;
+}
+
+.buttonFollow{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    /* font-weight: bolder; */
+
+    color: #24292e;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+    -webkit-appearance: none;
+}
+
+.bioData{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;;
+}
+
+path{
+    fill: gray;
+}
+
+.rightNav{
+    float: right;
+    width: 70%;
+}
+ul{
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-left: none;
+    margin-left: none;
+    -ms-overflow-style: none;
+}
+.rightTopMenu::-webkit-scrollbar {
+    display: none;
+}
+
+ul#menu li{
+    display: inline;
+    padding: 10px;
+    overflow-x: scroll;
+    display: inline;
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #586069;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    background-color: initial;
+    box-sizing: border-box;
+}
+
+ul#menu li span{
+    color: rgb(44, 43, 43);
+    background-color: #ededee;
+    border-radius: 10px;
+    padding: 3px;
+}
+.menuItems{
+    overflow-x: scroll;
+    display: inline;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #586069;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    background-color: initial;
+    box-sizing: border-box;
+}
+
+ul#menu li .active{
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 2p solid black
+}
+
+.rightTopMenu{
+    /* margin-left: 20px; */
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.leftNav1{
+    display: none;
+    margin-top: 12.45px;
+    background-color: white;
+    /* padding-top: 5px; */
+    width: 29%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid silver;
+    padding-bottom: 12px;
+}
+
+.spanclass1{
+    color: black;
+    margin-top: 40%;
+}
+
+.loadingController{
+   /* width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    align-items: center;
+    vertical-align: middle;*/
+
+    display: flex; 
+    width: 100%; 
+    min-height: 400px; 
+    margin: auto; 
+    border-radius: 10px; 
+    /* border: 3px dashed #1c87c9; */
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (max-width : 728px) {
+    .leftNav1{
+        display: none;
+    }
+    .rightNav, .leftNav{
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+    .rightTopMenu{
+        width: 100%;
+        overflow-x: scroll;
+        position: sticky;
+        top: 0;
+    }
+    .profile_image{
+        width: 80%;
+        height: 80%;
+        margin: 0px;
+        padding: 0;
+    }
+    .imagediv{
+        margin: 0px;
+        padding: 0;
+        width: 25%;
+        float: left;
+        text-align: left;
+    }
+    .nameSection{
+        margin-top: 0;
+        width: 72%;
+        float: right;
+    }
+    .bioData{
+        margin: 0;
+        width: 100%;
+        float: left;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    .leftNav1{
+        display: none;
+    }
+    .rightNav, .leftNav{
+        float: left;
+        width: 100%;
+    }
+    .rightTopMenu{
+        width: 100%;
+        overflow-x: scroll;
+        position: sticky;
+      top: 0;
+    }
+}
