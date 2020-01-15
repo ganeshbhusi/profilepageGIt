@@ -6,11 +6,10 @@ const Header = () => {
 
     return (
         <div className="mainheader">
-            <div className="responsiveDiv" onClick={() => {
-                console.log("hiii");
+            <div className="responsiveDiv">
+                <span className="menuToggle" onClick={() => {
                 setShowRespMenu(!showRespMenu)
             }}>
-                <span className="menuToggle">
                     &#9776;
                 </span>
                 {
