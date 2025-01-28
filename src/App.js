@@ -22,7 +22,7 @@ class App extends Component {
   }
   /*Getting profile data*/
   getProfile(){
-    fetch('https://api.github.com/users/supreetsingh247')
+    fetch('https://api.github.com/users/ganeshbhusi')
       .then(response => response.json())
       .then(response => this.setState({
         profile: response.avatar_url,
@@ -33,9 +33,9 @@ class App extends Component {
         location: response.location}))
       .catch(err=>console.error(err))
   }
-  /*Getting Repositories data and filtering languages*/
+  /*Getting Repositories data and filtering languages supreetsingh247*/
   getRepos(){
-    fetch('https://api.github.com/users/supreetsingh247/repos')
+    fetch('https://api.github.com/users/ganeshbhusi/repos')
       .then(response => response.json())
       .then(response => this.setState({repos: response}))
       .then(res=>
@@ -136,7 +136,7 @@ class App extends Component {
         <br/>
         <small className="company">{company}</small><br/>
         <small className="location">{location}</small><br/>
-        <small className="email"><a href="mailto:supreetsingh.247@gmail.com">supreetsingh.247@gmail.com</a></small>
+        <small className="email"><a href="mailto:ganeshpaul999@gmail.com">ganeshpaul999@gmail.com</a></small>
       </div>
 
       <div className="rightPanel">
